@@ -1,0 +1,28 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d"],
+
+    "jsList" : [
+        "src/resource.js",
+        "src/gameTools.js",
+
+        "src/Ball.js",
+        "src/BtnSprite.js",
+
+        "src/BaseLayer.js",
+        "src/BgLayer.js",
+        "src/WelcomeLayer.js",
+        "src/SmileBallLayer.js",
+        "src/IntroLayer.js",
+        "src/RecordLayer.js",
+        "src/GameOverLayer.js"
+    ]
+}
