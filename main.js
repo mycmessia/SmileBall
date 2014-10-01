@@ -8,7 +8,7 @@ cc.game.onStart = function(){
         if (!GT.getRecord())
             GT.setRecord(0);
 
-        cc.log("GT.getRecord()" + GT.getRecord());
+//        cc.log("GT.getRecord()" + GT.getRecord());
 
         GT.addResCache();
 
@@ -18,7 +18,7 @@ cc.game.onStart = function(){
 
         GT.SCALE_RATIO = GT.winSize.width / GT.designSize.width;
 
-        cc.log(GT.SCALE_RATIO);
+//        cc.log(GT.SCALE_RATIO);
 
         GT.BASE_POS_Y = GT.winSize.height / GT.SCALE_RATIO;
 

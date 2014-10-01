@@ -15,7 +15,9 @@ var SmileBallLayer = BaseLayer.extend({
         this.NEW_BALL_COUNT = 3;
 
         this.FADE_IN_TIME = 0.3;
-        this.FADE_OUT_TIME = 0.3;
+        this.FADE_OUT_TIME = 0.5;
+        this.BLINK_DURING = 0.6;
+        this.BLINK_TIMES = 3;
 
         this.board = [];
         this.boardPos = {x: 0, y: 0};
@@ -691,7 +693,9 @@ var SmileBallLayer = BaseLayer.extend({
             for (var i = 0; i < this.removeBallList.length; i++)
             {
                 this.removeBallList[i].sprite.runAction(cc.FadeOut.create(this.FADE_OUT_TIME));
-                this.removeBallList[i].sprite.getChildByTag(0).runAction(cc.FadeOut.create(this.FADE_OUT_TIME));
+                this.removeBallList[i].sprite.getChildByTag(0).runAction(
+                    cc.FadeOut.create(this.FADE_OUT_TIME)
+                );
             }
 
             this.scheduleOnce(function () {

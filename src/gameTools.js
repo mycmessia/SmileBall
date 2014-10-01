@@ -38,7 +38,7 @@ var GT = {
 
         var during = Date.now() - start;
 
-        cc.log((fnName || "本程序1000次耗时") + during + "毫秒");
+//        cc.log((fnName || "本程序1000次耗时") + during + "毫秒");
 
     },
 

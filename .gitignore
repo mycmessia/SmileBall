@@ -1,6 +1,5 @@
-frameworks
-runtime
-res
+frameworks/
+runtime/
 
 .idea
 .DS_Store
